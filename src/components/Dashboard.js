@@ -10,6 +10,7 @@ import Drawer from './routes/Drawer';
 import {colors} from './DarkMode/colors';
 import '../../languages/i18n';
 import { useTranslation } from 'react-i18next';
+import LogoutPower from './Login/LogoutPower';
 
 
 const windowHeight = Dimensions.get('window').height;
@@ -41,6 +42,10 @@ const Dashboard = ({navigation}) => {
 
     function goToProfileScreen() {
         navigation.navigate('ProfileScreen');
+    };
+
+    function goToWelcomeScreen() {
+        navigation.navigate('WelcomeScreen');
     };
 
     //Firebase
@@ -84,6 +89,8 @@ const Dashboard = ({navigation}) => {
                 {/* HEADER ITEM */}
 
                 <View style={styles.headerItems}>
+
+                    <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:0, marginLeft:-40, marginRight:30, color: activeColors.tint}}/>
 
                     <TouchableOpacity style={styles.headerItems_item}>
                         <AntDesign name="wallet" size={20} color='#fff' style={{marginRight: 5}} />
