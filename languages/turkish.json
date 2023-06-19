@@ -1,0 +1,88 @@
+{
+  "dummyNamespace": {
+    "medium": "HARIKA!"
+  },
+  "LOG IN": "GİRİŞ",
+
+  "profileTitle": {
+    "Information": "Kullanıcı Bilgisi",
+    "Theme": "Tema"
+  },
+
+  "profileDarkMode": {
+    "DarkMode": "Karanlık Mod"
+  },
+
+  "userListTitle": {
+    "IdentifyNumber": "T.C. Kimlik No",
+    "Name": "İsim",
+    "Email": "Eposta",
+    "Password": "Şifre"
+  },
+
+  "signInButton": {
+    "SignIn": "Kayıt Ol"
+  },
+
+  "signInTexts": {
+    "Register": "Kayıt Ol",
+    "SignInWith": "Bunlar ile Kayıt Ol",
+    "AlreadyAccount": "Hesabın var mı?",
+    "LoginNavigate": "Giriş"
+  },
+
+  "signInPlaceholder": {
+    "Fullname": "Adınızı girin",
+    "ID":"T.C. kimlik numaranız",
+    "Email": "Eposta adresinizi girin",
+    "Password": "Şifrenizi girin",
+    "PasswordAgain": "Şifrenizi tekrar girin"
+  },
+
+  "logInButton": {
+    "LogIn": "Giriş"
+  },
+
+  "logInTexts": {
+    "BankLogin": "Banka Giriş",
+    "LoginWith": "Bunlar ile Giriş Yap",
+    "New": "Hesabın yoksa?",
+    "RegisterNavigate": "Kayıt Ol",
+    "Forgot": "Şifremi Unuttum"
+  },
+
+  "logInPlaceholder": {
+    "ID": "T.C. kimlik no",
+    "Password": "Şifrenizi girin"
+  },
+
+  "savedCardAdd": { 
+    "AddAccount": "Hesap Ekle"
+  },
+
+  "savedList": {
+    "ExpiryEnd": "Son Kullanım"
+  },
+
+  "dashboard": {
+    "Wallet": "Cüzdan",
+    "Historic": "Geçmiş",
+    "DepositButton": "Havale",
+    "ExchangerButton": "Döviz A/S",
+    "Options": "Ayarlama",
+    "LiveStreamButton": "Canlı Döviz Takibi",
+    "ProfileButton": "Profil",
+    "LastTransaction": "Son İşlemler"
+  },
+
+  "currencyExchanger": {
+    "SourceAmountTitle": "Satılan Miktar",
+    "SelectSourceCurrencyTitle": "Satılan Para Birimi",
+    "TargetAmountTitle": "Alınan Miktar",
+    "SelectTargetCurrencyTitle": "Alınan Para Birimi",
+    "SourceCurrencyPlaceholder": "Satılan Para Birimi Seçiniz",
+    "TargetCurrencyPlaceholder": "Alınan Para Birimi Seçiniz",
+    "CheckCurrencyButton": "Miktarı Kontrol Et",
+    "ConvertButton": "Dönüştür"
+  }
+}

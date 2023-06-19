@@ -1,0 +1,88 @@
+{
+  "dummyNamespace": {
+    "medium": "medium is great!"
+  },
+  "LOG IN": "LOG IN",
+
+  "profileTitle": {
+    "Information": "Information",
+    "Theme": "Theme"
+  },
+
+  "profileDarkMode": {
+    "DarkMode": "Dark Mode"
+  },
+
+  "userListTitle": {
+    "IdentifyNumber": "Identify Number",
+    "Name": "Name",
+    "Email": "Email",
+    "Password": "Password"
+  },
+
+  "signInButton": {
+    "SignIn": "Sign In"
+  },
+
+  "signInTexts": {
+    "Register": "Register",
+    "SignInWith": "Sign In with",
+    "AlreadyAccount": "Already have an Account?",
+    "LoginNavigate": "Log In"
+  },
+
+  "signInPlaceholder": {
+    "Fullname": "Enter your full name",
+    "ID":"Enter your ID",
+    "Email": "Enter your email",
+    "Password": "Enter your password",
+    "PasswordAgain": "Enter your password again"
+  },
+
+  "logInButton": {
+    "LogIn": "Log In"
+  },
+
+  "logInTexts": {
+    "BankLogin": "Bank Login",
+    "LoginWith": "Login With",
+    "New": "If you have not Account?",
+    "RegisterNavigate": "Register",
+    "Forgot": "Forgot?"
+  },
+
+  "logInPlaceholder": {
+    "ID": "Enter your ID",
+    "Password": "Enter your password"
+  },
+
+  "savedCardAdd": { 
+    "AddAccount": "Add Account"
+  },
+
+  "savedList": {
+    "ExpiryEnd": "Expiry End"
+  },
+
+  "dashboard": {
+    "Wallet": "Wallet",
+    "Historic": "Historic",
+    "DepositButton": "Deposit",
+    "ExchangerButton": "Exchanger",
+    "Options": "Options",
+    "LiveStreamButton": "Live Stream Currency",
+    "ProfileButton": "Profile",
+    "LastTransaction": "Last Transaction"
+  },
+
+  "currencyExchanger": {
+    "SourceAmountTitle": "Source Amount",
+    "SelectSourceCurrencyTitle": "Source Currency",
+    "TargetAmountTitle": "Target Amount",
+    "SelectTargetCurrencyTitle": "Target Currency",
+    "SourceCurrencyPlaceholder": "Select Source Currency",
+    "TargetCurrencyPlaceholder": "Select Target Currency",
+    "CheckCurrencyButton": "Check Currency",
+    "ConvertButton": "Convert"
+  }
+}

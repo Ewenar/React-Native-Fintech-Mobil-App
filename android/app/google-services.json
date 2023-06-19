@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581905219455",
+    "project_id": "testuc-cbdf3",
+    "storage_bucket": "testuc-cbdf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581905219455:android:c457f04194fe2389ce244a",
+        "android_client_info": {
+          "package_name": "com.testuc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581905219455-08h5vvg6i78ud9vfnjajmoig5ks9562h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOM0yRKeNNgX_qz-wrP1rXsKJLgct4FIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581905219455-08h5vvg6i78ud9vfnjajmoig5ks9562h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

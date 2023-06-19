@@ -1,0 +1,1170 @@
+[
+    {
+        "id": "0",
+        "symbol": "AUD",
+        "companyName": "Wisozk Inc",
+        "catchPhrase": "Networked fresh-thinking leverage",
+        "priceData": [
+            {
+                "price": 1
+            },
+            {
+                "price": 1.5
+            },
+            {
+                "price": 1.74
+            },
+            {
+                "price": 1.76
+            },
+            {
+                "price": 1.86
+            },
+            {
+                "price": 2.11
+            },
+            {
+                "price": 2.58
+            },
+            {
+                "price": 2.19
+            },
+            {
+                "price": 2.57
+            },
+            {
+                "price": 2.17
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "symbol": "EUR",
+        "companyName": "Zemlak Inc",
+        "catchPhrase": "Configurable motivating data-warehouse",
+        "priceData": [
+            {
+                "price": 945
+            },
+            {
+
+                "price": 858.08
+            },
+            {
+
+                "price": 799.61
+            },
+            {
+
+                "price": 860.14
+            },
+            {
+
+                "price": 883.7
+            },
+            {
+
+                "price": 936.86
+            },
+            {
+
+                "price": 848.05
+            },
+            {
+               
+                "price": 884.56
+            },
+            {
+                
+                "price": 887.81
+            },
+            {
+                
+                "price": 939.65
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "symbol": "BRL",
+        "companyName": "Powlowski - Tremblay",
+        "catchPhrase": "Extended intangible implementation",
+        "priceData": [
+            {
+
+                "price": 211
+            },
+            {
+
+                "price": 228.32
+            },
+            {
+
+                "price": 244.12
+            },
+            {
+
+                "price": 235.41
+            },
+            {
+
+                "price": 222.14
+            },
+            {
+
+                "price": 234.63
+            },
+            {
+
+                "price": 78.25
+            },
+            {
+
+                "price": 80.91
+            },
+            {
+   
+                "price": 77.03
+            },
+            {
+
+                "price": 76.47
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "symbol": "CAD",
+        "companyName": "Kunze, Davis and Jacobi",
+        "catchPhrase": "Mandatory asymmetric functionalities",
+        "priceData": [
+            {
+
+                "price": 907
+            },
+            {
+
+                "price": 923.69
+            },
+            {
+
+                "price": 913.77
+            },
+            {
+
+                "price": 937.53
+            },
+            {
+
+                "price": 976.38
+            },
+            {
+  
+                "price": 895.26
+            },
+            {
+
+                "price": 958.68
+            },
+            {
+
+                "price": 909.33
+            },
+            {
+                "price": 986.4
+            },
+            {
+
+                "price": 895.31
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "symbol": "CHF",
+        "companyName": "Konopelski, Kohler and Considine",
+        "catchPhrase": "Open-source even-keeled capability",
+        "priceData": [
+            {
+                "price": 407
+            },
+            {
+                "price": 420.48
+            },
+            {
+                "price": 417.94
+            },
+            {
+                "price": 293.94
+            },
+            {
+                "price": 317.39
+            },
+            {
+                "price": 305.77
+            },
+            {
+                "price": 284.01
+            },
+            {
+                "price": 261.84
+            },
+            {
+                "price": 242.16
+            },
+            {
+                "price": 222.99
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "symbol": "CNY",
+        "companyName": "Johns, Heller and Dooley",
+        "catchPhrase": "Configurable national product",
+        "priceData": [
+            {
+                "price": 136
+            },
+            {
+                "price": 131.04
+            },
+            {
+                "price": 138.27
+            },
+            {
+                "price": 131.88
+            },
+            {
+                "price": 135.92
+            },
+            {
+                "price": 148.48
+            },
+            {
+                "price": 146.17
+            },
+            {
+                "price": 136.31
+            },
+            {
+                "price": 122.95
+            },
+            {
+                "price": 133.94
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "symbol": "SAR",
+        "companyName": "MacGyver - Prohaska",
+        "catchPhrase": "Versatile solution-oriented software",
+        "priceData": [
+            {
+                "price": 59
+            },
+            {
+                "price": 63.43
+            },
+            {
+                "price": 57.03
+            },
+            {
+                "price": 57.41
+            },
+            {
+                "price": 56.04
+            },
+            {
+                "price": 51.85
+            },
+            {
+                "price": 51.09
+            },
+            {
+                "price": 52.03
+            },
+            {
+                "price": 51.24
+            },
+            {
+                "price": 49.37
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "symbol": "DKK",
+        "companyName": "Glover Group",
+        "catchPhrase": "Multi-tiered multi-tasking project",
+        "priceData": [
+            {
+                "price": 34
+            },
+            {
+                "price": 31.24
+            },
+            {
+                "price": 33.73
+            },
+            {
+                "price": 29.68
+            },
+            {
+                "price": 25.06
+            },
+            {
+                "price": 24.99
+            },
+            {
+                "price": 29.68
+            },
+            {
+                "price": 31.91
+            },
+            {
+                "price": 31.05
+            },
+            {
+                "price": 28.31
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "symbol": "GBP",
+        "companyName": "Goldner - Mante",
+        "catchPhrase": "Organized encompassing contingency",
+        "priceData": [
+            {
+                "price": 100
+            },
+            {
+                "price": 113.93
+            },
+            {
+                "price": 110.86
+            },
+            {
+                "price": 94.13
+            },
+            {
+                "price": 102.88
+            },
+            {
+                "price": 114.89
+            },
+            {
+                "price": 116.98
+            },
+            {
+                "price": 105.21
+            },
+            {
+                "price": 119.88
+            },
+            {
+                "price": 115.95
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "symbol": "HKD",
+        "companyName": "Grady and Sons",
+        "catchPhrase": "Open-source actuating functionalities",
+        "priceData": [
+            {
+                "price": 478
+            },
+            {
+                "price": 506.83
+            },
+            {
+                "price": 511.59
+            },
+            {
+                "price": 519.9
+            },
+            {
+                "price": 488.33
+            },
+            {
+                "price": 444.11
+            },
+            {
+                "price": 485.98
+            },
+            {
+                "price": 469.39
+            },
+            {
+                "price": 446.9
+            },
+            {
+                "price": 462.31
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "symbol": "HUF",
+        "companyName": "Flatley Group",
+        "catchPhrase": "Universal systemic algorithm",
+        "priceData": [
+            {
+                "price": 64
+            },
+            {
+                "price": 60.49
+            },
+            {
+                "price": 65.36
+            },
+            {
+                "price": 64.85
+            },
+            {
+                "price": 68.14
+            },
+            {
+                "price": 65.06
+            },
+            {
+                "price": 62.16
+            },
+            {
+                "price": 63.92
+            },
+            {
+                "price": 67.26
+            },
+            {
+                "price": 67.08
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "symbol": "IDR",
+        "companyName": "Welch - Bartell",
+        "catchPhrase": "Monitored 5th generation synergy",
+        "priceData": [
+            {
+                "price": 20
+            },
+            {
+                "price": 18.45
+            },
+            {
+                "price": 16.23
+            },
+            {
+                "price": 14.61
+            },
+            {
+                "price": 15.77
+            },
+            {
+                "price": 13.71
+            },
+            {
+                "price": 14.74
+            },
+            {
+                "price": 13.11
+            },
+            {
+                "price": 11.59
+            },
+            {
+                "price": 12.77
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "symbol": "ILS",
+        "companyName": "Swaniawski - Prosacco",
+        "catchPhrase": "Automated stable definition",
+        "priceData": [
+            {
+                "price": 376
+            },
+            {
+                "price": 401.68
+            },
+            {
+                "price": 408.64
+            },
+            {
+                "price": 397.78
+            },
+            {
+                "price": 366.29
+            },
+            {
+                "price": 345.57
+            },
+            {
+                "price": 362.21
+            },
+            {
+                "price": 376.64
+            },
+            {
+                "price": 340.77
+            },
+            {
+                "price": 366.82
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "symbol": "INR",
+        "companyName": "MacGyver - McGlynn",
+        "catchPhrase": "Advanced heuristic pricing structure",
+        "priceData": [
+            {
+                "price": 727
+            },
+            {
+                "price": 655.47
+            },
+            {
+                "price": 671.58
+            },
+            {
+                "price": 636.12
+            },
+            {
+                "price": 656.99
+            },
+            {
+                "price": 601.11
+            },
+            {
+                "price": 580.95
+            },
+            {
+                "price": 590.58
+            },
+            {
+                "price": 552.78
+            },
+            {
+                "price": 507.87
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "symbol": "ISK",
+        "companyName": "Hilll, Kautzer and Rice",
+        "catchPhrase": "Proactive systematic hub",
+        "priceData": [
+            {
+                "price": 482
+            },
+            {
+                "price": 509.1
+            },
+            {
+                "price": 493.69
+            },
+            {
+                "price": 460.92
+            },
+            {
+                "price": 479.51
+            },
+            {
+                "price": 474
+            },
+            {
+                "price": 499.21
+            },
+            {
+                "price": 540.85
+            },
+            {
+                "price": 550.6
+            },
+            {
+                "price": 525.57
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "symbol": "JPY",
+        "companyName": "Boyer Inc",
+        "catchPhrase": "Visionary actuating monitoring",
+        "priceData": [
+            {
+                "price": 581
+            },
+            {
+                "price": 534.4
+            },
+            {
+                "price": 501.75
+            },
+            {
+                "price": 901.3
+            },
+            {
+                "price": 904.98
+            },
+            {
+                "price": 865.42
+            },
+            {
+                "price": 889.13
+            },
+            {
+                "price": 856.75
+            },
+            {
+                "price": 854.2
+            },
+            {
+                "price": 814.93
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "symbol": "KRW",
+        "companyName": "Kohler - Trantow",
+        "catchPhrase": "Networked object-oriented challenge",
+        "priceData": [
+            {
+                "price": 813
+            },
+            {
+                "price": 807
+            },
+            {
+                "price": 769.86
+            },
+            {
+                "price": 739.41
+            },
+            {
+                "price": 750.43
+            },
+            {
+                "price": 819.85
+            },
+            {
+                "price": 835.2
+            },
+            {
+                "price": 903.09
+            },
+            {
+                "price": 961.14
+            },
+            {
+                "price": 904.21
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "symbol": "MXN",
+        "companyName": "Waelchi - Carroll",
+        "catchPhrase": "Ameliorated transitional superstructure",
+        "priceData": [
+            {
+                "price": 912
+            },
+            {
+                "price": 983.22
+            },
+            {
+                "price": 1055.36
+            },
+            {
+                "price": 948.71
+            },
+            {
+                "price": 953.1
+            },
+            {
+                "price": 975.77
+            },
+            {
+                "price": 921.39
+            },
+            {
+                "price": 921.48
+            },
+            {
+                "price": 877.9
+            },
+            {
+                "price": 860.15
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "symbol": "MYR",
+        "companyName": "Grant and Sons",
+        "catchPhrase": "Vision-oriented non-volatile monitoring",
+        "priceData": [
+            {
+                "price": 251
+            },
+            {
+                "price": 255.06
+            },
+            {
+                "price": 280.48
+            },
+            {
+                "price": 309.07
+            },
+            {
+                "price": 327.67
+            },
+            {
+                "price": 355.83
+            },
+            {
+                "price": 378.28
+            },
+            {
+                "price": 410.95
+            },
+            {
+                "price": 389.77
+            },
+            {
+                "price": 419.86
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "symbol": "NOK",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "symbol": "NZD",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "symbol": "PHP",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "symbol": "PLN",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "symbol": "RON",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "symbol": "SEK",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "symbol": "SGD",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "symbol": "THB",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "symbol": "TRY",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "symbol": "USD",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "symbol": "ZAR",
+        "companyName": "Littel Group",
+        "catchPhrase": "Object-based heuristic leverage",
+        "priceData": [
+            {
+                "price": 789
+            },
+            {
+                "price": 810.18
+            },
+            {
+                "price": 788.87
+            },
+            {
+                "price": 829.57
+            },
+            {
+                "price": 858.7
+            },
+            {
+                "price": 936.02
+            },
+            {
+                "price": 977.76
+            },
+            {
+                "price": 935.77
+            },
+            {
+                "price": 976.57
+            },
+            {
+                "price": 1055.02
+            }
+        ]
+    }
+]
