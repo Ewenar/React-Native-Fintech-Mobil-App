@@ -11,6 +11,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import UserList from '../UserInformation/UserList';
 import '../../../languages/i18n';
 import { useTranslation } from 'react-i18next';
+import DropDownPicker from 'react-native-dropdown-picker';
 
 
 const Profile = ({navigation}) => {
@@ -64,6 +65,17 @@ const Profile = ({navigation}) => {
               console.log(String(filePath));
             });
     };
+
+    const [open, setOpen] = useState(false);
+    const [value, setValue] = useState('en');
+    const [items, setItems] = useState([
+        {label: 'English', value: 'en'},
+        {label: 'Turkish', value: 'tr'},
+    ]);
+
+    useEffect(() => {
+        i18n.changeLanguage(value);
+    }, [i18n, value]);
 
         //Firebase
 
@@ -124,6 +136,26 @@ const Profile = ({navigation}) => {
             <Switch value={isActive} onValueChange={handleSwitch} thumbColor={isActive ? activeColors.accent : activeColors.tertiary} trackColor={{false: activeColors.primary, true: activeColors.tertiary}}/>
         </View>
 
+        <View style={styles.profileTitleContainer}>
+            <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileDarkMode.Language')}</Text>
+        </View>
+
+        <View style={[styles.pickerContainer, {backgroundColor: activeColors.primary}]}>
+            <DropDownPicker
+            style={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
+            dropDownContainerStyle={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
+            arrowIconStyle={{tintColor: activeColors.accent}}
+            textStyle={{color: activeColors.tint, paddingLeft:10}}
+            dropDownDirection="BOTTOM"
+            open={open}
+            value={value}
+            items={items}
+            setOpen={setOpen}
+            setValue={setValue}
+            setItems={setItems}
+        />
+        </View>
+
     </SafeAreaView>
   );
 };
@@ -167,6 +199,16 @@ const styles = StyleSheet.create({
 
     darkModeText: {
         paddingLeft: 10,
+    },
+
+    pickerContainer: {
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        borderRadius: 50,
+        padding: 10,
+        marginTop: 5,
+        marginHorizontal: 20,
+        flexDirection: 'row',
     },
 
     avatar: {

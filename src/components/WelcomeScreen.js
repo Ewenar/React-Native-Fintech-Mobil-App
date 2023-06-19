@@ -16,18 +16,8 @@ const WelcomeScreen = ({navigation}) => {
         navigation.navigate("Home");
     }
 
-
     const {t, i18n} = useTranslation();
-    const [open, setOpen] = useState(false);
-    const [value, setValue] = useState('en');
-    const [items, setItems] = useState([
-        {label: 'English', value: 'en'},
-        {label: 'Turkish', value: 'tr'},
-    ]);
 
-    useEffect(() => {
-        i18n.changeLanguage(value);
-    }, [i18n, value]);
 
 
   return (
@@ -39,18 +29,6 @@ const WelcomeScreen = ({navigation}) => {
 
         <LoginButton onPress={goToLoginScreen} containerName={t('LOG IN')}/>
 
-        <Text>{t('dummyNamespace.medium')}</Text>
-
-        <View>
-            <DropDownPicker
-            open={open}
-            value={value}
-            items={items}
-            setOpen={setOpen}
-            setValue={setValue}
-            setItems={setItems}
-        />
-    </View>
     </View>
   );
 };
