@@ -1,14 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 import React from 'react';
-import Watchlist from './Watchlist'
+import CurrencyText from './CurrencyText';
 
 const Watchlist = () => {
-  return (
-    <View>
-      <Text>Watchlist</Text>
-    </View>
 
-    <CurrencyText/>
+  return (
+    <SafeAreaView>
+        <View>
+        <Text>Watchlist</Text>
+        </View>
+
+        <CurrencyText/>
+    </SafeAreaView>
   )
 }
 
