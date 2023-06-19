@@ -128,13 +128,13 @@ const LoginScreen = ({navigation}) => {
 
           <View>
 
-            <LoginContainer iconName="person-outline" error={errors.id} onFocus={() => {handleError(null, 'id')}} placeholderTextColor="grey" colo placeholder={t('logInPlaceholder.ID')} keyboardType="numeric" id maxLength={11} onChangeText={text => handleOnChange(text, 'id')}/>
+            <LoginContainer iconName="person-outline" error={errors.id} onFocus={() => {handleError(null, 'id')}} placeholderTextColor="grey" colo placeholder={t('logInPlaceholder.ID')} keyboardType="numeric" id maxLength={11} onChangeText={text => handleOnChange(text, 'id')} color={activeColors.tint}/>
 
           </View>
 
           <View>
 
-            <LoginContainer iconName="md-lock-closed-outline" error={errors.password} onFocus={() => {handleError(null, 'password')}} placeholderTextColor="grey" placeholder={t('logInPlaceholder.Password')} password onChangeText={text => handleOnChange(text, 'password')} />
+            <LoginContainer iconName="md-lock-closed-outline" error={errors.password} onFocus={() => {handleError(null, 'password')}} placeholderTextColor="grey" placeholder={t('logInPlaceholder.Password')} password onChangeText={text => handleOnChange(text, 'password')} color={activeColors.tint}/>
 
             <TouchableOpacity>
               <Text style={{color: '#0065ff', marginRight: 10, marginBottom:10}}>{t('logInTexts.Forgot')}</Text>
