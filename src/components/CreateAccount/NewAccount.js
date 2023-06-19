@@ -85,7 +85,7 @@ import {colors} from '../DarkMode/colors';
 			<Dropdown
 			style={[styles.dropdown, isFocus && { borderColor: 'blue'}]}
 			placeholderStyle={[styles.placeholderStyle, {color: activeColors.tint}]}
-			selectedTextStyle={styles.selectedTextStyle}
+			selectedTextStyle={[styles.selectedTextStyle, {color: activeColors.tint}]}
 			inputSearchStyle={styles.inputSearchStyle}
 			itemTextStyle={styles.itemTextStyle}
 			iconStyle={styles.iconStyle}
@@ -117,7 +117,7 @@ import {colors} from '../DarkMode/colors';
 			<Dropdown
 			style={[styles.dropdown, isFocus && { borderColor: 'blue'}]}
 			placeholderStyle={[styles.placeholderStyle, {color: activeColors.tint}]}
-			selectedTextStyle={styles.selectedTextStyle}
+			selectedTextStyle={[styles.selectedTextStyle, {color: activeColors.tint}]}
 			inputSearchStyle={styles.inputSearchStyle}
 			itemTextStyle={styles.itemTextStyle}
 			iconStyle={styles.iconStyle}
@@ -149,7 +149,7 @@ import {colors} from '../DarkMode/colors';
 			<Dropdown
 			style={[styles.dropdown, isFocus && { borderColor: 'blue'}]}
 			placeholderStyle={[styles.placeholderStyle, {color: activeColors.tint}]}
-			selectedTextStyle={styles.selectedTextStyle}
+			selectedTextStyle={[styles.selectedTextStyle, {color: activeColors.tint}]}
 			inputSearchStyle={styles.inputSearchStyle}
 			itemTextStyle={styles.itemTextStyle}
 			iconStyle={[styles.iconStyle, {color: activeColors.tint}]}
