@@ -7,6 +7,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import {colors} from './DarkMode/colors';
 import '../../languages/i18n';
 import { useTranslation } from 'react-i18next';
+import LogoutPower from './Login/LogoutPower';
 
 const SavedCreditCard = ({navigation}) => {
 
@@ -30,11 +31,27 @@ const SavedCreditCard = ({navigation}) => {
     navigation.navigate("Board");
   };
 
+  function goToWelcomeScreen() {
+    navigation.navigate("Welcome");
+  }
+
+  function goToProfileScreen() {
+    navigation.navigate("ProfileScreen");
+  }
+
   return (
     <>
       <SafeAreaView style={[styles.container, {flex: 1, backgroundColor: activeColors.primary}]}>
-        <SavedHeader/>
-        <SavedList onPress={goToDashboard}/>
+
+        <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:30, marginLeft:20, color: activeColors.tint}}/>
+
+        <View style={styles.headerContainer}>
+          <SavedHeader/>
+        </View>
+
+        <View style={{ marginTop:-50}}>
+          <SavedList/>
+        </View>
 
         <View style={{justifyContent: 'center', paddingHorizontal: 80}}>
           <TouchableOpacity style={[styles.addAccount, {backgroundColor: activeColors.secondary}]} onPress={goToAddAccount}>
@@ -51,7 +68,15 @@ export default SavedCreditCard
 
 const styles = StyleSheet.create({
 
-    scrollView: {},
+    scrollView: {
+      flex:1,
+    },
+
+    headerContainer:{
+      marginHorizontal: 70,
+      marginTop: 20,
+    },
+
     darkMode: {
       flexDirection: 'row',
       justifyContent: 'space-between',

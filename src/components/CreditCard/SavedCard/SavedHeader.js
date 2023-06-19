@@ -1,36 +1,42 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity,SafeAreaView } from 'react-native';
 import React, {useState, useContext} from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import ImageButton from './../ImageButton';
 import {colors} from '../../DarkMode/colors';
+import LogoutPower from '../../Login/LogoutPower';
 
-export default function SavedHeader({color}) {
+export default function SavedHeader({pressGear}) {
 
   const {theme} = useContext(ThemeContext);
   let activeColors = colors[theme.mode];
 
+
   return (
-    <View style={styles.container}>
-      <ImageButton color={activeColors.tertiary} source={require('./../../../../assets/back.png')}/>
-      <Text style={[styles.title, {color: activeColors.tertiary}]}>Saved Cards</Text>
-      <ImageButton color = {activeColors.tertiary} source={require('./../../../../assets/setting.png')}/>
-    </View>
+    <SafeAreaView>
+        <View style={styles.container}>
+          <Text style={[styles.title, {color: activeColors.tertiary}]}>Saved Cards</Text>
+        </View>
+    </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
 
+  headerContainer:{
+    flexDirection: 'row',
+  },
+
   title:{
     fontWeight:'700',
     fontSize: 32,
-    //color:'#2E2D2D',
+    justifyContent: 'center',
+    alignContent: 'center',
   },
 
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     padding: 7,
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
 });

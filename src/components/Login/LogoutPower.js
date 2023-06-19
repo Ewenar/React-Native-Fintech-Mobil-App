@@ -1,11 +1,19 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, {useContext} from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { ThemeContext } from '../contexts/ThemeContext';
+import {colors} from '../DarkMode/colors';
+
+
 
 const LogoutPower = ({name, onPress, style}) => {
+
+  const {theme} = useContext(ThemeContext);
+  let activeColors = colors[theme.mode];
+
   return (
     <TouchableOpacity onPress={onPress}>
-        <Ionicons name={name} size={30} color= "#666" style={style} />
+        <Ionicons name={name} size={30} color={activeColors.tertiary} style={style} />
     </TouchableOpacity>
   )
 }
