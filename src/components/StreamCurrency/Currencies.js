@@ -1,42 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, TouchableOpacity, ScrollView} from 'react-native';
 import io from 'socket.io-client';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import useWebSocket from 'react-use-websocket';
 import CurrencyText from './CurrencyText';
+import {colors} from '../DarkMode/colors';
+import { ThemeContext } from '../contexts/ThemeContext';
 
-
-//const socket = io('ws://192.168.1.11:3000');
-
-//socket.on('connect', () => {
-    //console.log('Socket Connected');
-//});
-
-
-const Item = ({rates}) => (
-  <TouchableOpacity>
-    <View style={styles.item}>
-      <Text style={styles.name}>PRICE: {rates}</Text>
-    </View>
-  </TouchableOpacity>
-);
 
 const LiveStreamCurrency = () => {
 
-/*  const socketUrl = 'ws://192.168.1.11:8080';
-
-  const {
-    sendMessage,
-    sendJsonMessage,
-    lastMessage,
-    lastJsonMessage,
-    readyState,
-    getWebSocket,
-  } = useWebSocket(socketUrl, {
-    onOpen: () => console.log('opened'),
-    //Will attempt to reconnect on all close events, such as server shutting down
-    shouldReconnect: (closeEvent) => true,
-  });*/
+  const {theme} = useContext(ThemeContext);
+	let activeColors = colors[theme.mode];
 
   const [data, setData] = useState('');
   const [key, setKey] = useState('');
@@ -62,9 +37,6 @@ const LiveStreamCurrency = () => {
   const subscription = { event: "subscribe", stocks: ['AUD', 'EUR', 'USD', 'CAD', 'GBP', 'JPY', 'NOK', 'TRY', 'SEK', 'CHF', 'SAR', 'DKK'] };
 
   useEffect(() => {
-    //socket.on('crypto', cryptoData => {
-      //setData(cryptoData);
-    //});
 
     const ws = new WebSocket(
       "ws://192.168.1.11:8080"
@@ -127,8 +99,6 @@ const LiveStreamCurrency = () => {
     };
   },[]);
 
-
-  const renderItem = () => <Item rates={data.price}/>
 
   return (
     <SafeAreaView style={styles.container}>
