@@ -13,7 +13,7 @@ const LogoutPower = ({name, onPress, style}) => {
 
   return (
     <TouchableOpacity onPress={onPress}>
-        <Ionicons name={name} size={30} color={activeColors.tertiary} style={style} />
+        <Ionicons onPress={onPress} name={name} size={30} color={activeColors.tertiary} style={style} />
     </TouchableOpacity>
   )
 }
