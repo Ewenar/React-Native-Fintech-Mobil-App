@@ -8,6 +8,7 @@ import {colors} from './DarkMode/colors';
 import '../../languages/i18n';
 import { useTranslation } from 'react-i18next';
 import LogoutPower from './Login/LogoutPower';
+import Dashboard from './Dashboard';
 
 const SavedCreditCard = ({navigation}) => {
 
@@ -42,15 +43,12 @@ const SavedCreditCard = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={[styles.container, {flex: 1, backgroundColor: activeColors.primary}]}>
-
-        <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:30, marginLeft:20, color: activeColors.tint}}/>
-
+      <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:30, marginLeft:20, color: activeColors.tint}}/>
         <View style={styles.headerContainer}>
           <SavedHeader/>
         </View>
-
         <View style={{ marginTop:-50}}>
-          <SavedList/>
+          <SavedList onPress={goToDashboard}/>
         </View>
 
         <View style={{justifyContent: 'center', paddingHorizontal: 80}}>
@@ -68,14 +66,14 @@ export default SavedCreditCard
 
 const styles = StyleSheet.create({
 
-    scrollView: {
-      flex:1,
-    },
+  scrollView: {
+    flex:1,
+  },
 
-    headerContainer:{
-      marginHorizontal: 70,
-      marginTop: 20,
-    },
+  headerContainer:{
+    marginHorizontal: 70,
+    marginTop: 20,
+  },
 
     darkMode: {
       flexDirection: 'row',

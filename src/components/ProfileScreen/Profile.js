@@ -113,7 +113,7 @@ const Profile = ({navigation}) => {
         };
 
         function goToWelcomeScreen() {
-            navigation.navigate('WelcomeScreen');
+            navigation.navigate('Welcome');
         };
 
 
