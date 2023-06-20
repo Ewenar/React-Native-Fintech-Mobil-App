@@ -12,6 +12,7 @@ import UserList from '../UserInformation/UserList';
 import '../../../languages/i18n';
 import { useTranslation } from 'react-i18next';
 import DropDownPicker from 'react-native-dropdown-picker';
+import LogoutPower from '../Login/LogoutPower';
 
 
 const Profile = ({navigation}) => {
@@ -111,49 +112,59 @@ const Profile = ({navigation}) => {
               }
         };
 
+        function goToWelcomeScreen() {
+            navigation.navigate('WelcomeScreen');
+        };
+
 
   return (
     <SafeAreaView style={[styles.root, {backgroundColor: activeColors.primary}]}>
 
-        <TouchableOpacity style={[styles.profilePhoto, {backgroundColor: activeColors.secondary}]} onPress={handleAvatar}>
-            {filePath && <Image style={styles.avatar} source={{uri: String(filePath)}} />}
-        </TouchableOpacity>
-
-        <View style={styles.profileTitleContainer}>
-            <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Information')}</Text>
-        </View>
-
         <View>
-            <UserList operation={inputs}/>
-        </View>
+            <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                <TouchableOpacity style={[styles.profilePhoto, {backgroundColor: activeColors.secondary}]} onPress={handleAvatar}>
+                    {filePath && <Image style={styles.avatar} source={{uri: String(filePath)}} />}
+                </TouchableOpacity>
 
-        <View style={styles.profileTitleContainer}>
-            <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Theme')}</Text>
-        </View>
+                <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{marginTop:40, marginRight:40, color: activeColors.tint}}/>
+            </View>
 
-        <View style={[styles.darkModeContainer, {backgroundColor: activeColors.secondary}]}>
-            <Text style={[styles.darkModeText, {color: activeColors.tint}]}>{t('profileDarkMode.DarkMode')}</Text>
-            <Switch value={isActive} onValueChange={handleSwitch} thumbColor={isActive ? activeColors.accent : activeColors.tertiary} trackColor={{false: activeColors.primary, true: activeColors.tertiary}}/>
-        </View>
+            <View style={styles.profileTitleContainer}>
+                <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Information')}</Text>
+            </View>
 
-        <View style={styles.profileTitleContainer}>
-            <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileDarkMode.Language')}</Text>
-        </View>
+            <View>
+                <UserList operation={inputs}/>
+            </View>
 
-        <View style={[styles.pickerContainer, {backgroundColor: activeColors.primary}]}>
-            <DropDownPicker
-            style={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
-            dropDownContainerStyle={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
-            arrowIconStyle={{tintColor: activeColors.accent}}
-            textStyle={{color: activeColors.tint, paddingLeft:10}}
-            dropDownDirection="BOTTOM"
-            open={open}
-            value={value}
-            items={items}
-            setOpen={setOpen}
-            setValue={setValue}
-            setItems={setItems}
-        />
+            <View style={styles.profileTitleContainer}>
+                <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Theme')}</Text>
+            </View>
+
+            <View style={[styles.darkModeContainer, {backgroundColor: activeColors.secondary}]}>
+                <Text style={[styles.darkModeText, {color: activeColors.tint}]}>{t('profileDarkMode.DarkMode')}</Text>
+                <Switch value={isActive} onValueChange={handleSwitch} thumbColor={isActive ? activeColors.accent : activeColors.tertiary} trackColor={{false: activeColors.primary, true: activeColors.tertiary}}/>
+            </View>
+
+            <View style={styles.profileTitleContainer}>
+                <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileDarkMode.Language')}</Text>
+            </View>
+
+            <View style={[styles.pickerContainer, {backgroundColor: activeColors.primary}]}>
+                <DropDownPicker
+                style={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
+                dropDownContainerStyle={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
+                arrowIconStyle={{tintColor: activeColors.accent}}
+                textStyle={{color: activeColors.tint, paddingLeft:10}}
+                dropDownDirection="BOTTOM"
+                open={open}
+                value={value}
+                items={items}
+                setOpen={setOpen}
+                setValue={setValue}
+                setItems={setItems}
+            />
+            </View>
         </View>
 
     </SafeAreaView>
