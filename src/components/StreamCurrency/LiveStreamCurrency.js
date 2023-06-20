@@ -1,42 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, TouchableOpacity} from 'react-native';
 import io from 'socket.io-client';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import useWebSocket from 'react-use-websocket';
 import Currencies from './Currencies'
+import {colors} from '../DarkMode/colors';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 
-//const socket = io('ws://192.168.1.11:3000');
-
-//socket.on('connect', () => {
-    //console.log('Socket Connected');
-//});
-
-
-const Item = ({rates}) => (
-  <TouchableOpacity>
-    <View style={styles.item}>
-      <Text style={styles.name}>PRICE: {rates}</Text>
-    </View>
-  </TouchableOpacity>
-);
 
 const LiveStreamCurrency = () => {
 
-/*  const socketUrl = 'ws://192.168.1.11:8080';
+  const {theme} = useContext(ThemeContext);
+	let activeColors = colors[theme.mode];
 
-  const {
-    sendMessage,
-    sendJsonMessage,
-    lastMessage,
-    lastJsonMessage,
-    readyState,
-    getWebSocket,
-  } = useWebSocket(socketUrl, {
-    onOpen: () => console.log('opened'),
-    //Will attempt to reconnect on all close events, such as server shutting down
-    shouldReconnect: (closeEvent) => true,
-  });*/
 
   const [data, setData] = useState('');
   const [key, setKey] = useState('');
@@ -61,9 +38,6 @@ const LiveStreamCurrency = () => {
   const subscription = { event: "subscribe", stocks: ['AUD', 'EUR', 'USD', 'CAD', 'GBP', 'JPY', 'NOK', 'TRY', 'SEK', 'CHF', 'SAR', 'DKK'] };
 
   useEffect(() => {
-    //socket.on('crypto', cryptoData => {
-      //setData(cryptoData);
-    //});
 
     const ws = new WebSocket(
       "ws://192.168.1.11:8080"
@@ -126,30 +100,8 @@ const LiveStreamCurrency = () => {
     };
   },[]);
 
-
-  const renderItem = () => <Item rates={data.price}/>
-
   return (
-    <SafeAreaView style={styles.container}>
-
-        {/*<Text>AUD: {JSON.stringify(ups)}</Text>
-        <Text>EUR: {JSON.stringify(eur)}</Text>
-        <Text>USD: {JSON.stringify(usd)}</Text>
-        <Text>CAD: {JSON.stringify(cad)}</Text>
-        <Text>GBP: {JSON.stringify(gbp)}</Text>
-        <Text>JPY: {JSON.stringify(jpy)}</Text>
-        <Text>NOK: {JSON.stringify(nok)}</Text>
-        <Text>TRY: {JSON.stringify(tl)}</Text>
-        <Text>SEK: {JSON.stringify(sek)}</Text>
-        <Text>CHF: {JSON.stringify(chf)}</Text>
-        <Text>SAR: {JSON.stringify(sar)}</Text>
-        <Text>SAR: {JSON.stringify(dkk)}</Text>
-
-        <FlatList
-          data={Object.keys(data)}
-          renderItem= {renderItem}
-          //keyExtractor={key}
-        />*/}
+    <SafeAreaView style={[styles.container, {backgroundColor: activeColors.primary}]}>
 
         <Currencies/>
 
@@ -160,7 +112,6 @@ const LiveStreamCurrency = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
   },
   item: {
     backgroundColor: '#f6f6f6',
