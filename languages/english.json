@@ -51,7 +51,8 @@
     "AddAccount": "Add Account"
   },
   "savedList": {
-    "ExpiryEnd": "Expiry End"
+    "ExpiryEnd": "Expiry End",
+    "SavedCardTitle": "Saved Cards"
   },
   "dashboard": {
     "Wallet": "Wallet",

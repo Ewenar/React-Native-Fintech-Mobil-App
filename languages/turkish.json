@@ -51,7 +51,8 @@
     "AddAccount": "Hesap Ekle"
   },
   "savedList": {
-    "ExpiryEnd": "Son Kullanım"
+    "ExpiryEnd": "Son Kullanım",
+    "SavedCardTitle": "Kayıtlı Kartlar"
   },
   "dashboard": {
     "Wallet": "Cüzdan",
