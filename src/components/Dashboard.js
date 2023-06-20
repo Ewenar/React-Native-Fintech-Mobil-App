@@ -45,7 +45,7 @@ const Dashboard = ({navigation}) => {
     };
 
     function goToWelcomeScreen() {
-        navigation.navigate('WelcomeScreen');
+        navigation.navigate('Welcome');
     };
 
     //Firebase
