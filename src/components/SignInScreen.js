@@ -158,53 +158,23 @@ const SignInScreen = ({navigation}) => {
         {/*Entry Field*/}
 
           <View>
-            <LoginContainer iconName="person-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Fullname')} error={errors.name} onFocus={() => {handleError(null, 'name')}} onChangeText={text => handleOnChange(text, 'name')} />
+            <LoginContainer iconName="person-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Fullname')} error={errors.name} onFocus={() => {handleError(null, 'name')}} onChangeText={text => handleOnChange(text, 'name')} color={activeColors.tint}/>
           </View>
 
           <View>
-            <LoginContainer iconName="phone-portrait-sharp" placeholderTextColor="grey" placeholder={t('signInPlaceholder.ID')} maxLength={11} error={errors.id} onFocus={() => {handleError(null, 'id')}} onChangeText={text => handleOnChange(text, 'id')}/>
-          </View>
-
-          {/*<View style={styles.inputContainer}>
-
-            <Entypo name="calendar" size={20} color='#666' style={{marginRight: 5}} />
-            <TouchableOpacity onPress={() => setOpen(true)} style={{flex:1, paddingVertical: 5}}><Text style={{paddingLeft: 5, color:'grey'}} >{birthDate === undefined ? 'Date of Birth ' : birthDate}</Text></TouchableOpacity>
-
-          </View>
-
-          {/*Date Picker}
-
-            <DatePicker
-                modal
-                open={open}
-                date={date}
-                mode={'date'}
-                minimumDate={new Date('1999-01-01')}
-                maximumDate={new Date('2023-01-01')}
-                locale={'tr'}
-                title={'Date of Birth'}
-                onConfirm={(date) => {
-                setOpen(false);
-                setDate(date);
-                setBirthDate(date.toDateString());
-                }}
-                onCancel={() => {
-                setOpen(false);
-                }}
-            /> */}
-
-          {/*End of Date Picker*/}
-
-          <View>
-            <LoginContainer iconName="mail-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Email')} error={errors.email} onFocus={() => {handleError(null, 'email')}} onChangeText={text => handleOnChange(text, 'email')}/>
+            <LoginContainer iconName="phone-portrait-sharp" placeholderTextColor="grey" placeholder={t('signInPlaceholder.ID')} maxLength={11} error={errors.id} onFocus={() => {handleError(null, 'id')}} onChangeText={text => handleOnChange(text, 'id')} color={activeColors.tint}/>
           </View>
 
           <View>
-            <LoginContainer iconName="ios-lock-closed-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Password')} error={errors.firstPassword} onFocus={() => {handleError(null, 'firstPassword')}} onChangeText={text => handleOnChange(text, 'firstPassword')}/>
+            <LoginContainer iconName="mail-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Email')} error={errors.email} onFocus={() => {handleError(null, 'email')}} onChangeText={text => handleOnChange(text, 'email')} color={activeColors.tint}/>
           </View>
 
           <View>
-            <LoginContainer iconName="ios-lock-closed-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.PasswordAgain')} error={errors.secondPassword} onFocus={() => {handleError(null, 'secondPassword')}} onChangeText={text => handleOnChange(text, 'secondPassword')}/>
+            <LoginContainer iconName="ios-lock-closed-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.Password')} error={errors.firstPassword} onFocus={() => {handleError(null, 'firstPassword')}} onChangeText={text => handleOnChange(text, 'firstPassword')} color={activeColors.tint}/>
+          </View>
+
+          <View>
+            <LoginContainer iconName="ios-lock-closed-outline" placeholderTextColor="grey" placeholder={t('signInPlaceholder.PasswordAgain')} error={errors.secondPassword} onFocus={() => {handleError(null, 'secondPassword')}} onChangeText={text => handleOnChange(text, 'secondPassword')} color={activeColors.tint}/>
           </View>
 
 
