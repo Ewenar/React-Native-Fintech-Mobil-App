@@ -6,7 +6,6 @@ import FontAwsome from 'react-native-vector-icons/FontAwesome';
 import database from '@react-native-firebase/database';
 import parseHistoric from './utils/parseHistoric';
 import LastTransaction from './Historic/LastTransaction';
-import Drawer from './routes/Drawer';
 import {colors} from './DarkMode/colors';
 import '../../languages/i18n';
 import { useTranslation } from 'react-i18next';
