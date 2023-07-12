@@ -101,55 +101,5 @@ A user and a stock message are sent. The desired currency units can be written a
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="800" height="200">
 
-Below you can see the response sent by the server:
-
-```json
-{
-    "event": "stocks-update",
-    "id": {
-        "AUD": {
-            "id": "0",
-            "favorite": false,
-            "symbol": "AUD",
-            "companyName": "Wisozk Inc",
-            "catchPhrase": "Networked fresh-thinking leverage",
-            "priceData": [
-                {
-                    "price": 1
-                },
-                {
-                    "price": 1.5
-                },
-                {
-                    "price": 1.74
-                },
-                {
-                    "price": 1.76
-                },
-                {
-                    "price": 1.86
-                },
-                {
-                    "price": 2.11
-                },
-                {
-                    "price": 2.58
-                },
-                {
-                    "price": 2.19
-                },
-                {
-                    "price": 2.57
-                },
-                {
-                    "price": 2.17
-                }
-            ]
-        }
-    },
-    "stocks": {
-        "AUD": 1.74
-    }
-}
-```
+You can access the [json file](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/blob/main/websocket/StocksWebsocketDemoServer/stocks.json) of the currencies updated and sent by the server.
 
