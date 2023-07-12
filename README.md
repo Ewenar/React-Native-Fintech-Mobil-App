@@ -4,6 +4,8 @@
 
 Fintech applications have revolutionized the way we manage our finances by leveraging the power of technology. React Native, a popular cross-platform framework, has emerged as a key tool for developing fintech applications due to its ability to build native-like mobile apps using JavaScript. In this readme, we will explore the various aspects of developing a fintech application using React Native.
 
+It is a react native application where users can register, create a bank account, follow live currency in this account, and convert the amount of money in their account to the currency they want.
+
 ## Technology Stack
 
 + **React Native 9.6.2**
