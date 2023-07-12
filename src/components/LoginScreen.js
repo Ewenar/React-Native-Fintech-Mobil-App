@@ -21,24 +21,22 @@ import { useTranslation } from 'react-i18next';
 
 const LoginScreen = ({navigation}) => {
 
+  // Language
+
   const {t, i18n} = useTranslation();
+
+  // Theme
 
   const {theme} = useContext(ThemeContext);
   let activeColors = colors[theme.mode];
 
+  // Use States
 
-  const [loading, setLoading] = useState(false);
-  const [inputs, setInputs] = useState({id:'', password:''});
-  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);  // Loading Use State
+  const [inputs, setInputs] = useState({id:'', password:''});   //Inputs Use State
+  const [errors, setErrors] = useState({});   // Errors Use State
 
-  function authContent() {
-    const contentObj = {
-      id: inputs.id,
-      firstPassword: inputs.firstPassword,
-    };
-
-    database().ref('users/').getItem(contentObj);
-  }
+  // Authantication
 
   const validate = () => {
 
@@ -64,6 +62,8 @@ const LoginScreen = ({navigation}) => {
     }
   };
 
+  // Input Validations
+
   const login = () => {
     setLoading(true);
     setTimeout(async() => {
@@ -88,6 +88,7 @@ const LoginScreen = ({navigation}) => {
     },3000);
   };
 
+  //Catch Input Changes
 
   const handleOnChange = (text, input) => {
 
@@ -95,11 +96,15 @@ const LoginScreen = ({navigation}) => {
 
   };
 
+  //Catch Errors
+
   const handleError = (errorMessage, input) => {
 
     setErrors(prevState => ({...prevState, [input]:errorMessage}));
 
   };
+
+  // Navigation
 
   function goToWelcomeScreen() {
     navigation.navigate("Welcome");
@@ -143,7 +148,7 @@ const LoginScreen = ({navigation}) => {
 
           </View>
 
-          {/*Button Action*/}
+          {/*Alternative Log In Button Action*/}
 
           <View>
             <Text style={[styles.textCenter, {color: activeColors.tint}]}>{t('logInTexts.LoginWith')}</Text>
@@ -160,6 +165,9 @@ const LoginScreen = ({navigation}) => {
             </TouchableOpacity>
 
           </View>
+
+          {/*LOG IN BUTTON*/}
+
           <View>
           {
             loading
@@ -170,6 +178,8 @@ const LoginScreen = ({navigation}) => {
                 </TouchableOpacity>
           }
           </View>
+
+          {/*Bottom Page Lines*/}
 
           <View
             style={{
