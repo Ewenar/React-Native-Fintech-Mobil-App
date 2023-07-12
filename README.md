@@ -24,7 +24,6 @@ To develop a fintech application in React Native, you can utilize the following 
 + **React Navigation**: A routing and navigation library for handling navigation within the app.
 + **Axios**: A popular HTTP client library for making API requests and handling responses.
 + **Firebase**: A backend-as-a-service platform that provides authentication, real-time database, cloud storage, and push notifications.
-+ **Charting Libraries**: Libraries like Victory, react-native-svg-charts, or Chart.js can be used to visualize financial data in the form of charts and graphs.
-+ **Payment Gateways and APIs**: Integration with payment gateways like Stripe, PayPal, or Braintree, and banking APIs like Plaid or Yodlee for secure transactions and account connectivity.
-+ **Testing Frameworks**: Utilize tools like Jest and Enzyme for unit testing and integration testing of components and functionality.
-+ **Deployment Platforms**: Platforms such as the Apple App Store and Google Play Store for distributing the application to end-users.
+
+![Welcome Screen](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a)
+
