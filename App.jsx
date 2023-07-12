@@ -9,7 +9,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import Navigation from './src/components/routes/Navigation'
 import Transaction from './src/components/Transaction'
 import SavedHeader from './src/components/CreditCard/SavedCard/SavedHeader'
-import ImageButton from './src/components/CreditCard/ImageButton'
 import SavedList from './src/components/CreditCard/SavedCard/SavedList'
 import SavedCreditCard from './src/components/SavedCreditCard'
 import WelcomeScreen from './src/components/WelcomeScreen'
@@ -23,6 +22,8 @@ import { storeData, getData } from './src/components/config/asyncStorage'
 import { useTranslation } from 'react-i18next'
 import SplashScreen from 'react-native-splash-screen'
 import Currencies from './src/components/StreamCurrency/Currencies';
+import store from './src/components/redux/store/Store';
+import { Provider } from 'react-redux';
 
 
 const App = () => {
@@ -59,9 +60,11 @@ const App = () => {
   },[]);
 
   return (
-    <ThemeContext.Provider value={{theme, updateTheme}}>
-      <LiveStreamCurrency/>
-    </ThemeContext.Provider>
+    <Provider store={store}>
+      <ThemeContext.Provider value={{theme, updateTheme}}>
+        <Navigation/>
+      </ThemeContext.Provider>
+    </Provider>
   );
 }
 
