@@ -19,7 +19,9 @@ const UserList = ({operation}) => {
 
   return (
     <View style={[styles.profilContainer, {backgroundColor: activeColors.secondary}]}>
+
         {/*User Information List*/}
+
         <View style={styles.informationTitle}>
             <Text style={[styles.informationText, {color: activeColors.tint}]}>{t('userListTitle.IdentifyNumber')}</Text>
             <Text style={[styles.informationText, {color: activeColors.tint}]}>{operation.id}</Text>
