@@ -43,12 +43,12 @@ const SignInScreen = ({navigation}) => {
     let valid = true;
 
     if (!inputs.name) {
-      handleError('NAME FAILLLL', 'name');
+      handleError('Name is empty', 'name');
       valid = false;
     }
 
     if (!inputs.id) {
-      handleError('ID FAILLLL', 'id');
+      handleError('ID is empty', 'id');
       valid = false;
     }
     else if (inputs.id.length < 11) {
@@ -57,16 +57,16 @@ const SignInScreen = ({navigation}) => {
     }
 
     if (!inputs.email) {
-      handleError('EMAIL FAILLLL', 'email');
+      handleError('Email is empty', 'email');
       valid = false;
     }
-    else if (!inputs.email) {
-      handleError('EMAIL FAILLLL', 'email');
+    else if (!inputs.email.match(/\S+@\S+\.\S+/)) {
+      handleError('Please input valid email', 'email');
       valid = false;
     }
 
     if (!inputs.firstPassword) {
-      handleError('Password FAILLLL', 'firstPassword');
+      handleError('Password is empty', 'firstPassword');
       valid = false;
     }
     else if (inputs.secondPassword.length < 6) {
@@ -75,7 +75,7 @@ const SignInScreen = ({navigation}) => {
     }
 
     if (!inputs.secondPassword) {
-      handleError('Password FAILLLL', 'secondPassword');
+      handleError('Password is empty', 'secondPassword');
       valid = false;
     }
     else if (inputs.secondPassword.length < 6) {
