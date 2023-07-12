@@ -77,17 +77,25 @@ Ensure the application's security by implementing measures like data encryption,
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a6069845-c0bc-462e-bd42-eb7146cfcae2" width="400" height="800">
 
 ### Live Stream Currency
-Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
+Currency units are updated in a time-dependent manner via websocket.
 
 *<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="400" height="800">
 
 ## Websocket
+
+The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+
+In this application, websocket is used to show live currency data. The program sends an HTTP request to the custom websocket server created when the live exchange page is opened. The determined currencies are updated via websocket.
 
 ### Running
 
 ```
 node server.js
 ```
+
+### Usage
+
+A user and a stock message are sent. The desired currency units can be written and added to the Stock array.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="400" height="100">
 
