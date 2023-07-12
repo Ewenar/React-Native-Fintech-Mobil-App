@@ -72,12 +72,12 @@ This is the screen where the user information appear. You can change theme, lang
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/7bc7ee67-d463-4ad9-96bb-c7d0fc9c664c" width="400" height="800">
 
 ### Currency Exchanger
-Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
+Users select the currency to be changed after entering the amount of money and currency in their account. First, the amount of money to be exchanged is checked, and then the exchange is performed.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a6069845-c0bc-462e-bd42-eb7146cfcae2" width="400" height="800">
 
 ### Live Stream Currency
-Currency units are updated in a time-dependent manner via websocket.
+Currency units are updated in a time-dependent manner via websocket. User can filter the desired currency unit.
 
 *<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="400" height="800">
 
