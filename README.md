@@ -4,6 +4,36 @@
 
 Fintech applications have revolutionized the way we manage our finances by leveraging the power of technology. React Native, a popular cross-platform framework, has emerged as a key tool for developing fintech applications due to its ability to build native-like mobile apps using JavaScript. In this readme, we will explore the various aspects of developing a fintech application using React Native.
 
+## Technology Stack
+
++ **React Native**
++ **Node.js**
++ **JDK**
++ **Android Studio**
++ **Postman (Websocket)**
+
+## Base Dependencies
+
++ **Redux**
++ **React Navigation**
++ **Axios**
++ **Firebase**
++ **Async Storage**
++ **Splash Screen**
++ **React Native Vector Icon**
++ **Dropdown Picker**
++ **Image Picker**
++ **react-i18next**
+
+## Running
+
+```
+npm start
+
+npx react-native run-android
+
+```
+
 ## Features and Functionalities
 
 ### Welcome Screen
@@ -50,14 +80,4 @@ Ensure the application's security by implementing measures like data encryption,
 Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
 
 *<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="400" height="800">
-
-## Technology Stack
-
-To develop a fintech application in React Native, you can utilize the following technologies and tools:
-
-+ **React Native**: A JavaScript framework for building cross-platform mobile applications.
-+ **Redux**: A predictable state container for managing the application's state and data flow.
-+ **React Navigation**: A routing and navigation library for handling navigation within the app.
-+ **Axios**: A popular HTTP client library for making API requests and handling responses.
-+ **Firebase**: A backend-as-a-service platform that provides authentication, real-time database, cloud storage, and push notifications.
 
