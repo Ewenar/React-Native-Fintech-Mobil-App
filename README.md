@@ -52,21 +52,3 @@ To develop a fintech application in React Native, you can utilize the following 
 + **Axios**: A popular HTTP client library for making API requests and handling responses.
 + **Firebase**: A backend-as-a-service platform that provides authentication, real-time database, cloud storage, and push notifications.
 
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a7edc524-f55d-409f-ba0b-07b8aa978df5" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/3ee9d9ee-ac2e-41f4-974b-85ea963d786f" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/33e70bb0-987f-46a2-840a-95db4946def9" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/4ce87d17-d37f-4d69-b650-54dd27d0e25e" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/ccec3dd6-3d1c-4d71-a3f6-407a458f980c" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/7bc7ee67-d463-4ad9-96bb-c7d0fc9c664c" width="400" height="800">
-
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a6069845-c0bc-462e-bd42-eb7146cfcae2" width="400" height="800">
-
-*<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="400" height="800">
-
