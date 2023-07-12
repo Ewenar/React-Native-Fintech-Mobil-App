@@ -11,11 +11,15 @@ import { useTranslation } from 'react-i18next';
 
 const endPoint = 'https://api.frankfurter.app';
 
+// Fetch Currency Values
+
 const fetchCurrencyLatest = () => {
     return fetch(`${endPoint}/latest`)
         .then(response => response.json())
         .then(data => Object.keys(data.rates));
 };
+
+// Converter API
 
 const convertCurrencyAPI = (amount, sourceCurrency, targetCurrency) => {
     return fetch(`${endPoint}/latest?amount=${amount}&from=${sourceCurrency}&to=${targetCurrency}`)
@@ -24,10 +28,16 @@ const convertCurrencyAPI = (amount, sourceCurrency, targetCurrency) => {
 
 const CurrencyExchanger = ({navigation}) => {
 
+    // Language
+
     const {t, i18n} = useTranslation();
+
+    // Theme
 
     const {theme} = useContext(ThemeContext);
     let activeColors = colors[theme.mode];
+
+    // Converter Use Case
 
     const [currencyList, setCurrencyList] = useState([]);
     const [sourceAmount, setSourceAmount] = useState('');
@@ -36,11 +46,17 @@ const CurrencyExchanger = ({navigation}) => {
     const [targetCurrency, setTargetCurrency] = useState('');
     const [amountData, setAmountData] = useState();
 
+    // Loading Use Case
+
     const [loading, setLoading] = useState(false);
     const [loadingConvert, setLoadingConvert] = useState(false);
+
+    // Picker Use Case
+
     const [sourceOpen, setSourceOpen] = useState(false);
     const [targetOpen, setTargetOpen] = useState(false);
 
+    // Use Effect
 
     useEffect(() => {
         fetchCurrencyLatest()
@@ -49,6 +65,8 @@ const CurrencyExchanger = ({navigation}) => {
         convertCurrencyAPI(1, 'USD', 'INR')
             .then(data => console.log(data));
     },[]);
+
+    // Check Currency Function
 
     const checkCurrency = (amount, sourceCurrency, targetCurrency) => {
         setLoading(true);
@@ -81,8 +99,7 @@ const CurrencyExchanger = ({navigation}) => {
         });
     };
 
-    console.log(amountData);
-
+    // Deposit Changes
 
     const setDB = () => {
         const reference = database().ref('deposit/');
@@ -91,11 +108,13 @@ const CurrencyExchanger = ({navigation}) => {
         });
     };
 
+    // Navigation
 
     function goToDashboard() {
         navigation.navigate("Board");
       }
 
+      // onPress Funciton
 
     function updateAmountData(amount, sourceCurrency, targetCurrency) {
         setLoadingConvert(true);
@@ -111,7 +130,11 @@ const CurrencyExchanger = ({navigation}) => {
   return (
     <SafeAreaView style={{flex:1, justifyContent: 'center', backgroundColor: activeColors.primary}}>
         <View style={[styles.mainContainer, {backgroundColor: activeColors.secondary}]}>
+
+            {/*EXCHANGER TABLE SECTION*/}
+
             <View style={{zIndex:3}}>
+
                 <Text style={[styles.text, {color: activeColors.tint}]}>{t('currencyExchanger.SourceAmountTitle')}</Text>
                 <TextInput
                     style={styles.textInput}
@@ -159,6 +182,9 @@ const CurrencyExchanger = ({navigation}) => {
                     setValue={setTargetCurrency}
                 />
             </View>
+
+            {/*BUTTON SECTION*/}
+
             <View style={{marginTop:10}}>
                 {
                     loading
