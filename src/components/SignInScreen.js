@@ -19,22 +19,25 @@ import { useTranslation } from 'react-i18next';
 
 const SignInScreen = ({navigation}) => {
 
+  // Language
+
   const {t, i18n} = useTranslation();
+
+  // Theme
 
   const {theme} = useContext(ThemeContext);
   let activeColors = colors[theme.mode];
 
+  // Loading Use Case
+
   const [loading, setLoading] = useState(false);
 
-  {/*Date Picker*/}
-  const [date, setDate] = useState(new Date());
-  const [open, setOpen] = useState(false);
-  const [birthDate, setBirthDate] = useState(undefined);
+  // Validation Use Case
 
-  {/*Validation*/}
   const [inputs, setInputs] = useState({name:'', id:'', date:'', email:'', firstPassword:'', secondPassword:''});
   const [errors, setErrors] = useState({});
 
+  // Authantication
 
   const validate = () => {
 
@@ -89,10 +92,11 @@ const SignInScreen = ({navigation}) => {
     }
 
     if (valid){
-      //sendContent();
       register();
     }
   };
+
+  // Push Inputs to Local Storage
 
   const register = () => {
     setLoading(true);
@@ -108,17 +112,23 @@ const SignInScreen = ({navigation}) => {
     }, 3000);
   };
 
+  //Catch Input Changes
+
   const handleOnChange = (text, input) => {
 
     setInputs(prevState => ({...prevState, [input]:text}));
 
   };
 
+  //Catch Errors
+
   const handleError = (errorMessage, input) => {
 
     setErrors(prevState => ({...prevState, [input]:errorMessage}));
 
   };
+
+  // Navigation
 
   function goToWelcomeScreen() {
     navigation.navigate("Welcome");
@@ -129,27 +139,17 @@ const SignInScreen = ({navigation}) => {
   };
 
 
-  //DATABASE
-  function sendContent() {
-    const contentObj = {
-      name: inputs.name,
-      id: inputs.id,
-      email: inputs.email,
-      firstPassword: inputs.firstPassword,
-    };
-
-    database().ref('users/').push(contentObj);
-    console.log(contentObj);
-  }
-
-
   return (
     <SafeAreaView style={[styles.root, {backgroundColor: activeColors.primary}]}>
 
       <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
       <View style={{paddingHorizontal:65}}>
 
+        {/*LOGOUT BUTTON*/}
+
         <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{marginTop:40, marginLeft:-30, color: activeColors.tint }}/> 
+
+        {/*TITLE*/}
 
         <View style={{margin:20}}>
           <Text style={[styles.title, {color: activeColors.tint}]} >{t('signInTexts.Register')}</Text>
@@ -178,7 +178,7 @@ const SignInScreen = ({navigation}) => {
           </View>
 
 
-          {/*Button Action*/}
+          {/*Sign In Action*/}
 
           {
             loading
@@ -189,9 +189,13 @@ const SignInScreen = ({navigation}) => {
                 </TouchableOpacity>
           }
 
+          {/*Sign In With Line*/}
+
           <View>
             <Text style={[styles.textCenter, {color: activeColors.tint}]}>{t('signInTexts.SignInWith')}</Text>
           </View>
+
+          {/*Alternative Sign In Button*/}
 
           <View style={styles.pngRow}>
 
@@ -219,6 +223,8 @@ const SignInScreen = ({navigation}) => {
               justifyContent: 'center',
               alignItems: 'center',
             }}>
+
+            {/*Bottom Page Lines*/}
 
             <Text style={{textAlign:'center', marginBottom:20, color: activeColors.tint }}> {t('signInTexts.AlreadyAccount')} </Text>
 
