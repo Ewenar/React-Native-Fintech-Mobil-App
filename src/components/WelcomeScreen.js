@@ -9,12 +9,18 @@ import DropDownPicker from 'react-native-dropdown-picker';
 
 const WelcomeScreen = ({navigation}) => {
 
+    //Theme Context
+
     const {theme} = useContext(ThemeContext);
     let activeColors = colors[theme.mode];
+
+    //Navigation
 
     function goToLoginScreen() {
         navigation.navigate("Home");
     }
+
+    //Language
 
     const {t, i18n} = useTranslation();
 
@@ -23,9 +29,13 @@ const WelcomeScreen = ({navigation}) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', paddingHorizontal: 65, backgroundColor: activeColors.primary}}>
 
+        {/*Image Section*/}
+
         <View style={styles.imgContainer}>
             <Image style={styles.logo} source={require('./../../assets/welcomelogo.png')}/>
         </View>
+
+        {/*Log In Button Section*/}
 
         <LoginButton onPress={goToLoginScreen} containerName={t('LOG IN')}/>
 
