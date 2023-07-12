@@ -1,10 +1,10 @@
-#Fintech Application in React Native
+# Fintech Application in React Native
 
-##Introduction
+## Introduction
 
 Fintech applications have revolutionized the way we manage our finances by leveraging the power of technology. React Native, a popular cross-platform framework, has emerged as a key tool for developing fintech applications due to its ability to build native-like mobile apps using JavaScript. In this readme, we will explore the various aspects of developing a fintech application using React Native.
 
-##Features and Functionalities
+## Features and Functionalities
 
 **User Authentication**: Implement a secure user authentication system that allows users to register, log in, and reset their passwords. This ensures the protection of user data and financial information.
 **Account Overview**: Provide users with an overview of their accounts, including bank balances, investment portfolios, and transaction history. This feature enables users to monitor their financial health at a glance.
@@ -15,7 +15,7 @@ Fintech applications have revolutionized the way we manage our finances by lever
 **Notifications and Alerts**: Implement a notification system to keep users informed about important account activities, such as transaction updates, payment reminders, and security alerts. Utilize push notifications and in-app alerts to deliver these notifications promptly.
 **Security Measures**: Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
 
-##Technology Stack
+## Technology Stack
 
 To develop a fintech application in React Native, you can utilize the following technologies and tools:
 
