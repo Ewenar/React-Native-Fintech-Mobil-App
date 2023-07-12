@@ -11,8 +11,12 @@ import {colors} from '../DarkMode/colors';
 
   const NewAccount = ({navigation}) => {
 
+	// Theme
+
 	const {theme} = useContext(ThemeContext);
 	let activeColors = colors[theme.mode];
+
+	// Use Cases
 
     const [pushAccountType, setPushAccountType] = useState('');
 	const [pushCurrencyType, setPushCurrencyType] = useState('');
@@ -25,6 +29,8 @@ import {colors} from '../DarkMode/colors';
 
 
 	useEffect(() => {
+
+		// Fetch All Information for Dropdown Picker
 		database()
 		.ref('/accountType')
 		.on('value', snapshot => {
@@ -49,6 +55,7 @@ import {colors} from '../DarkMode/colors';
 			setAdressData(parsedAdress);
 		});
 
+		// IBAN Generator
 
 		const randomNumber = ((Math.floor(Math.random() * (100 - 10) + 10)).toString() + ' ' + (Math.floor(Math.random() * (10000 - 1000) + 1000)).toString()
 		+ ' ' + (Math.floor(Math.random() * (10000 - 1000) + 1000)).toString() + ' ' + (Math.floor(Math.random() * (10000 - 1000) + 1000)).toString()
@@ -58,6 +65,7 @@ import {colors} from '../DarkMode/colors';
 
 	},[]);
 
+	//Push Card Information to Firebase
 
 	const pushCardInfo = () => {
         const reference = database().ref('creditCard/');
@@ -69,9 +77,13 @@ import {colors} from '../DarkMode/colors';
         });
     };
 
+	// Navigation
+
 	function goToLoginScreen() {
 		navigation.navigate("CreditCard");
 	};
+
+	// onPress Function
 
 	function createCreditCard () {
 		pushCardInfo();
@@ -81,6 +93,9 @@ import {colors} from '../DarkMode/colors';
 
     return (
       <View style={[styles.container, {backgroundColor: activeColors.primary}]}>
+
+		{/*DROPDOWN PICKER SECTION*/}
+
 		<View style={{padding: 20, borderRadius:15, borderWidth:2, borderColor:'black', backgroundColor: activeColors.secondary}}>
 			<Dropdown
 			style={[styles.dropdown, isFocus && { borderColor: 'blue'}]}
@@ -177,6 +192,8 @@ import {colors} from '../DarkMode/colors';
 				/>
 			)}
 			/>
+
+			{/*BUTTON SECTION*/}
 
 			<TouchableOpacity style={{backgroundColor:'#0f3460', padding:20, borderRadius:15, alignItems:'center'}} onPress={createCreditCard}>
 				<Text style={{color: '#fff', textTransform: 'uppercase', fontWeight: '600'}}>Create Account</Text>
