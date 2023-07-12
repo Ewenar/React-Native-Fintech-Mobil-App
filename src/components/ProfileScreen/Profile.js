@@ -17,22 +17,33 @@ import LogoutPower from '../Login/LogoutPower';
 
 const Profile = ({navigation}) => {
 
+    // Language
+
     const {t, i18n} = useTranslation();
+
+    //Theme
 
     const {theme, updateTheme} = useContext(ThemeContext);
     let activeColors = colors[theme.mode];
+
+    //Use Cases
 
     const [isActive, setIsActive] = useState(theme.mode === 'dark');
     const [filePath, setFilePath] = useState();
     const [inputs, setInputs] = useState({name:'', id:'', date:'', email:'', firstPassword:'', secondPassword:''});
 
+    // Dark Mode Switch Function
 
     const handleSwitch = () => {
         updateTheme();
         setIsActive((previousState) => !previousState);
     };
 
+    // Avatar Options
+
     const handleAvatar =  () => {
+
+        // Permissions
         requestCameraPermission();
         requestExternalWritePermission();
 
@@ -43,6 +54,7 @@ const Profile = ({navigation}) => {
               quality: 1,
             };
 
+            // Fetch Image
 
             launchImageLibrary(options, (response) => {
               console.log('Response = ', response);
@@ -67,12 +79,16 @@ const Profile = ({navigation}) => {
             });
     };
 
+    // Language Switcher
+
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState('en');
     const [items, setItems] = useState([
         {label: 'English', value: 'en'},
         {label: 'Turkish', value: 'tr'},
     ]);
+
+    // Language Use Effect
 
     useEffect(() => {
         i18n.changeLanguage(value);
@@ -81,6 +97,7 @@ const Profile = ({navigation}) => {
         //Firebase
 
         useEffect(() => {
+            // Fetch Profile Photo Firebase
             database()
             .ref('/avatar/photo')
             .on('value', snapshot => {
@@ -93,6 +110,8 @@ const Profile = ({navigation}) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         },[]);
 
+        //Set Profile Photo in Firebase 
+
         const setOther = (item) => {
             const reference = database().ref('avatar/');
             reference.set({
@@ -100,7 +119,7 @@ const Profile = ({navigation}) => {
             });
         };
 
-        //AsyncStorage
+        //Fetch Profile Photo AsyncStorage
 
         const retrieveData = async () => {
 
@@ -108,9 +127,10 @@ const Profile = ({navigation}) => {
               if (value !== null) {
                 setInputs(JSON.parse(value));
                 console.log(inputs.name);
-                //console.log(JSON.parse(value).name);
               }
         };
+
+        // Navigation
 
         function goToWelcomeScreen() {
             navigation.navigate('Welcome');
@@ -121,13 +141,20 @@ const Profile = ({navigation}) => {
     <SafeAreaView style={[styles.root, {backgroundColor: activeColors.primary}]}>
 
         <View>
+
+            {/*AVATAR SECTION*/}
+
             <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                 <TouchableOpacity style={[styles.profilePhoto, {backgroundColor: activeColors.secondary}]} onPress={handleAvatar}>
                     {filePath && <Image style={styles.avatar} source={{uri: String(filePath)}} />}
                 </TouchableOpacity>
 
+                {/*LOG OUT BUTTON*/}
+
                 <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{marginTop:40, marginRight:40, color: activeColors.tint}}/>
             </View>
+
+            {/*PROFILE INFORMATION SECTION*/}
 
             <View style={styles.profileTitleContainer}>
                 <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Information')}</Text>
@@ -137,6 +164,8 @@ const Profile = ({navigation}) => {
                 <UserList operation={inputs}/>
             </View>
 
+            {/*THEME SECTION*/}
+
             <View style={styles.profileTitleContainer}>
                 <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileTitle.Theme')}</Text>
             </View>
@@ -145,6 +174,8 @@ const Profile = ({navigation}) => {
                 <Text style={[styles.darkModeText, {color: activeColors.tint}]}>{t('profileDarkMode.DarkMode')}</Text>
                 <Switch value={isActive} onValueChange={handleSwitch} thumbColor={isActive ? activeColors.accent : activeColors.tertiary} trackColor={{false: activeColors.primary, true: activeColors.tertiary}}/>
             </View>
+
+            {/*LANGUAGE SECTION*/}
 
             <View style={styles.profileTitleContainer}>
                 <Text style={[styles.profileTitleText, {color: activeColors.accent}]}>{t('profileDarkMode.Language')}</Text>
