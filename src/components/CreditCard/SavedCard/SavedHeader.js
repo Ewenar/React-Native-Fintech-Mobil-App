@@ -8,7 +8,11 @@ import { useTranslation } from 'react-i18next';
 
 export default function SavedHeader({pressGear}) {
 
+  // Language
+
   const {t, i18n} = useTranslation();
+
+  // Theme
 
   const {theme} = useContext(ThemeContext);
   let activeColors = colors[theme.mode];
