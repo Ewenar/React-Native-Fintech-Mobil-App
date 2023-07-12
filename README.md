@@ -97,5 +97,5 @@ node server.js
 
 A user and a stock message are sent. The desired currency units can be written and added to the Stock array.
 
-<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="400" height="200">
+<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="800" height="200">
 
