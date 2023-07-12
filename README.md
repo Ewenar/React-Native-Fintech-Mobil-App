@@ -101,7 +101,7 @@ A user and a stock message are sent. The desired currency units can be written a
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="800" height="200">
 
-Below you can see the response sent by the server
+Below you can see the response sent by the server:
 
 ```json
 {
