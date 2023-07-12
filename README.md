@@ -97,7 +97,7 @@ node server.js
 
 ### Usage
 
-A user and a stock message are sent. The desired currency units can be written and added to the Stock array.if you want to access the server file [click here]([https://choosealicense.com/licenses/mit/](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/tree/main/websocket/StocksWebsocketDemoServer))
+A user and a stock message are sent. The desired currency units can be written and added to the Stock array.if you want to access the server file [click here([https://choosealicense.com/licenses/mit/](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/tree/main/websocket/StocksWebsocketDemoServer))
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="800" height="200">
 
