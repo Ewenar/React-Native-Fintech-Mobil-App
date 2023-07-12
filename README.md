@@ -11,8 +11,9 @@ Fintech applications have revolutionized the way we manage our finances by lever
 + **JDK**
 + **Android Studio**
 + **Postman (Websocket)**
++ **Firebase**
 
-## Base Dependencies
+## Libraries
 
 + **Redux**
 + **React Navigation**
@@ -31,7 +32,6 @@ Fintech applications have revolutionized the way we manage our finances by lever
 npm start
 
 npx react-native run-android
-
 ```
 
 ## Features and Functionalities
