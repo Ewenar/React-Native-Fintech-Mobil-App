@@ -17,13 +17,21 @@ const windowHeight = Dimensions.get('window').height;
 
 const Dashboard = ({navigation}) => {
 
+    // Language
+
     const {t, i18n} = useTranslation();
+
+    // Theme
 
     const {theme} = useContext(ThemeContext);
     let activeColors = colors[theme.mode];
 
+    // Use Cases
+
     const [deposit, setDeposit] = useState();
     const [historic, setHistoric] = useState();
+
+    // Update Deposit
 
     function updateDeposit() {
         setDeposit(deposit - 10);
