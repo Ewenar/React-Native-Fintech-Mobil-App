@@ -6,8 +6,8 @@ Fintech applications have revolutionized the way we manage our finances by lever
 
 ## Features and Functionalities
 
-+ **Welcome Screen**: Entrance Screen. Users click the LOG IN button.
-
+### Welcome Screen
+Entrance Screen. Users click the LOG IN button.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a" width="400" height="800">
 
@@ -16,7 +16,7 @@ Users enter their id and password. User information is authenticated via local s
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a7edc524-f55d-409f-ba0b-07b8aa978df5" width="400" height="800">
 
-###Sign In
+### Sign In
 The users enter the requested information. The new user is created when they are saved to local storage.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/3ee9d9ee-ac2e-41f4-974b-85ea963d786f" width="400" height="800">
