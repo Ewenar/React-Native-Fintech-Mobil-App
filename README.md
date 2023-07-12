@@ -83,7 +83,7 @@ Currency units are updated in a time-dependent manner via websocket. User can fi
 
 *<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="350" height="800">
 
-## Websocket
+## Websocket Running
 
 The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 
