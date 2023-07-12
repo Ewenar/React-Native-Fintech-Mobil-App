@@ -12,17 +12,16 @@ import Dashboard from './Dashboard';
 
 const SavedCreditCard = ({navigation}) => {
 
+  // Language
+
   const {t, i18n} = useTranslation();
+
+  //Theme
 
   const {theme} = useContext(ThemeContext);
   let activeColors = colors[theme.mode];
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const onValueChange = () => setIsDarkMode(!isDarkMode);
-
-  const color = isDarkMode ? '#fff' : '#2E2D2D';
-
+  // Navigation
 
   function goToAddAccount() {
     navigation.navigate("CreateAccount");
@@ -36,20 +35,27 @@ const SavedCreditCard = ({navigation}) => {
     navigation.navigate("Welcome");
   }
 
-  function goToProfileScreen() {
-    navigation.navigate("ProfileScreen");
-  }
-
   return (
     <>
       <SafeAreaView style={[styles.container, {flex: 1, backgroundColor: activeColors.primary}]}>
-      <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:30, marginLeft:20, color: activeColors.tint}}/>
+
+        {/*LOGOUT BUTTON*/}
+
+        <LogoutPower name={'power'} onPress={goToWelcomeScreen} style={{width:30, marginTop:30, marginLeft:20, color: activeColors.tint}}/>
+
+        {/*HEADER*/}
+
         <View style={styles.headerContainer}>
           <SavedHeader/>
         </View>
+
+        {/*SAVED CREDIT CARD*/}
+
         <View style={{ marginTop:-50}}>
           <SavedList onPress={goToDashboard}/>
         </View>
+
+        {/*ADD NEW ACCOUNT BUTTON*/}
 
         <View style={{justifyContent: 'center', paddingHorizontal: 80}}>
           <TouchableOpacity style={[styles.addAccount, {backgroundColor: activeColors.secondary}]} onPress={goToAddAccount}>
@@ -57,6 +63,7 @@ const SavedCreditCard = ({navigation}) => {
             <Text style={([styles.addAccountText], {color: activeColors.tint})}>{t('savedCardAdd.AddAccount')}</Text>
           </TouchableOpacity>
         </View>
+
       </SafeAreaView>
     </>
   );
