@@ -18,6 +18,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
+
 const LoginScreen = ({navigation}) => {
 
   const {t, i18n} = useTranslation();
@@ -45,12 +46,12 @@ const LoginScreen = ({navigation}) => {
 
     let valid = true;
     if (!inputs.id) {
-      handleError('ID FAILLLL', 'id');
+      handleError('ID is empty', 'id');
       valid = false;
     }
 
     if (!inputs.password) {
-      handleError('Password FAILLLL', 'password');
+      handleError('Password is empty', 'password');
       valid = false;
     }
     else if (inputs.password.length < 6) {
