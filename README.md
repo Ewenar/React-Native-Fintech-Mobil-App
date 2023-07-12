@@ -6,39 +6,39 @@ Fintech applications have revolutionized the way we manage our finances by lever
 
 ## Features and Functionalities
 
-+ **User Authentication**: Implement a secure user authentication system that allows users to register, log in, and reset their passwords. This ensures the protection of user data and financial information.
++ **Welcome Screen**: Implement a secure user authentication system that allows users to register, log in, and reset their passwords. This ensures the protection of user data and financial information.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a" width="400" height="800">
 
-+ **Account Overview**: Provide users with an overview of their accounts, including bank balances, investment portfolios, and transaction history. This feature enables users to monitor their financial health at a glance.
++ **Log In**: Provide users with an overview of their accounts, including bank balances, investment portfolios, and transaction history. This feature enables users to monitor their financial health at a glance.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a7edc524-f55d-409f-ba0b-07b8aa978df5" width="400" height="800">
 
-+ **Payments and Transfers**: Enable users to make payments and transfer funds between accounts seamlessly. Implement integrations with popular payment gateways and banking APIs to facilitate secure transactions.
++ **Sign In**: Enable users to make payments and transfer funds between accounts seamlessly. Implement integrations with popular payment gateways and banking APIs to facilitate secure transactions.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/3ee9d9ee-ac2e-41f4-974b-85ea963d786f" width="400" height="800">
 
-+ **Bill Payments**: Incorporate a feature that allows users to pay bills directly from the application. Integrate with bill payment service providers to automate the process and provide real-time notifications for successful payments.
++ **Saved Credit Card**: Incorporate a feature that allows users to pay bills directly from the application. Integrate with bill payment service providers to automate the process and provide real-time notifications for successful payments.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/33e70bb0-987f-46a2-840a-95db4946def9" width="400" height="800">
 
-+ **Budgeting and Expense Tracking**: Help users manage their finances by offering budgeting tools and expense tracking capabilities. Enable users to categorize their expenses, set budget limits, and receive alerts when nearing or exceeding those limits.
++ **Create New Accounts**: Help users manage their finances by offering budgeting tools and expense tracking capabilities. Enable users to categorize their expenses, set budget limits, and receive alerts when nearing or exceeding those limits.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/4ce87d17-d37f-4d69-b650-54dd27d0e25e" width="400" height="800">
 
-+ **Investment Management**: Provide users with investment management features, such as tracking investment performance, buying and selling stocks, and accessing market data. Integrate with financial data providers to fetch real-time stock prices and market trends.
++ **Dashboard**: Provide users with investment management features, such as tracking investment performance, buying and selling stocks, and accessing market data. Integrate with financial data providers to fetch real-time stock prices and market trends.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/ccec3dd6-3d1c-4d71-a3f6-407a458f980c" width="400" height="800">
 
-+ **Notifications and Alerts**: Implement a notification system to keep users informed about important account activities, such as transaction updates, payment reminders, and security alerts. Utilize push notifications and in-app alerts to deliver these notifications promptly.
++ **Profile**: Implement a notification system to keep users informed about important account activities, such as transaction updates, payment reminders, and security alerts. Utilize push notifications and in-app alerts to deliver these notifications promptly.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/7bc7ee67-d463-4ad9-96bb-c7d0fc9c664c" width="400" height="800">
 
-+ **Security Measures**: Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
++ **Currency Exchanger**: Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
 
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/a6069845-c0bc-462e-bd42-eb7146cfcae2" width="400" height="800">
 
-+ **Security Measures**: Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
++ **Live Stream Currency**: Ensure the application's security by implementing measures like data encryption, secure connections (HTTPS), two-factor authentication, and fraud detection mechanisms. Comply with industry standards and regulations to protect user data and prevent unauthorized access.
 
 *<img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/afa15476-a916-43cb-927e-4c04b66304d1" width="400" height="800">
 
