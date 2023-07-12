@@ -31,8 +31,6 @@ export default function SavedList({onPress}) {
 		});
     },[]);
 
-    console.log(creditCardInfo);
-
     const renderItem = ({item, index}) => {
         return (
             <TouchableOpacity onPress={onPress}>
