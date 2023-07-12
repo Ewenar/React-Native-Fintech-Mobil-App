@@ -25,5 +25,5 @@ To develop a fintech application in React Native, you can utilize the following 
 + **Axios**: A popular HTTP client library for making API requests and handling responses.
 + **Firebase**: A backend-as-a-service platform that provides authentication, real-time database, cloud storage, and push notifications.
 
-![Welcome Screen](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a)
+![Welcome Screen](https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/c50b3c98-6a73-4ee3-b76d-a72d0e57d98a =250x250)
 
