@@ -6,9 +6,9 @@ Fintech applications have revolutionized the way we manage our finances by lever
 
 ## Technology Stack
 
-+ **React Native**
-+ **Node.js**
-+ **JDK**
++ **React Native 9.6.2**
++ **Node.js 19.8.1**
++ **JDK11.0.18**
 + **Android Studio**
 + **Postman (Websocket)**
 + **Firebase**
