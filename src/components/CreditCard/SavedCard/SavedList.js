@@ -11,12 +11,17 @@ const w = Dimensions.get("window").width;
 
 export default function SavedList({onPress}) {
 
+    // Language
+
     const {t, i18n} = useTranslation();
+
+    // Use States
 
     const [page, setPage] = useState(0);
     const [creditCardInfo, setCreditCardInfo] = useState();
 
     useEffect(() => {
+        //Fetch Account Information
         database()
 		.ref('/creditCard')
 		.on('value', snapshot => {
@@ -31,6 +36,9 @@ export default function SavedList({onPress}) {
     const renderItem = ({item, index}) => {
         return (
             <TouchableOpacity onPress={onPress}>
+
+                {/*CREDIT CARD SECTION*/}
+
                 <View style=
                 {{
                     paddingVertical: page == index ? 0 : 10,
@@ -39,12 +47,7 @@ export default function SavedList({onPress}) {
                     <View style={[
                         styles.cardContainer,
                         {backgroundColor: 'purple', height: page == index ? 200 : 180},
-                        /*{transform: [{
-                            scaleY: page == index ? 2 : 1,
-                        }]},*/
                     ]}>
-
-                        {/*<Image source={require('./../../../../assets/creditcard.png')} style={styles.cardBackground}/>*/}
 
                         <Text style={styles.cardTitle}>{item.bankAdress}</Text>
 
