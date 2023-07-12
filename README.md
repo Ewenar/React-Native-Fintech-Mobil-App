@@ -83,5 +83,11 @@ Ensure the application's security by implementing measures like data encryption,
 
 ## Websocket
 
+### Running
+
+```
+node server.js
+```
+
 <img src="https://github.com/Ewenar/React-Native-Fintech-Mobil-App/assets/93758260/aef92b1b-b2a9-4e0b-8341-afc472363f6a" width="400" height="100">
 
