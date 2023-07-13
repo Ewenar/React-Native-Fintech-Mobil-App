@@ -73,5 +73,8 @@
     "TargetCurrencyPlaceholder": "Alınan Para Birimi Seçiniz",
     "CheckCurrencyButton": "Miktarı Kontrol Et",
     "ConvertButton": "Dönüştür"
+  },
+  "profileLanguage": {
+    "Placeholder": "Dil Seçiniz"
   }
 }
