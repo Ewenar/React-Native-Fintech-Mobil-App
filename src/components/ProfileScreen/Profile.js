@@ -82,7 +82,7 @@ const Profile = ({navigation}) => {
     // Language Switcher
 
     const [open, setOpen] = useState(false);
-    const [value, setValue] = useState('en');
+    const [value, setValue] = useState();
     const [items, setItems] = useState([
         {label: 'English', value: 'en'},
         {label: 'Turkish', value: 'tr'},
@@ -110,7 +110,7 @@ const Profile = ({navigation}) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         },[]);
 
-        //Set Profile Photo in Firebase 
+        //Set Profile Photo in Firebase
 
         const setOther = (item) => {
             const reference = database().ref('avatar/');
@@ -119,7 +119,7 @@ const Profile = ({navigation}) => {
             });
         };
 
-        //Fetch Profile Photo AsyncStorage
+        //Fetch User Information AsyncStorage
 
         const retrieveData = async () => {
 
@@ -186,6 +186,7 @@ const Profile = ({navigation}) => {
                 style={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
                 dropDownContainerStyle={{backgroundColor: activeColors.secondary, borderColor: activeColors.primary}}
                 arrowIconStyle={{tintColor: activeColors.accent}}
+                placeholder={t('profileLanguage.Placeholder')}
                 textStyle={{color: activeColors.tint, paddingLeft:10}}
                 dropDownDirection="BOTTOM"
                 open={open}
