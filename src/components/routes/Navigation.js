@@ -15,6 +15,7 @@ import NewAccount from '../CreateAccount/NewAccount';
 import LiveStreamCurrency from '../StreamCurrency/LiveStreamCurrency';
 import CurrencyExchanger from '../CurrencyConverter/CurrencyExchanger';
 import Profile from '../ProfileScreen/Profile';
+import Watchlist from '../StreamCurrency/Watchlist';
 
 
 const Stack = createNativeStackNavigator();
@@ -36,6 +37,7 @@ const Navigation = () => {
         <Stack.Screen name="LiveStream" component={LiveStreamCurrency} />
         <Stack.Screen name="Exchanger" component={CurrencyExchanger} />
         <Stack.Screen name="ProfileScreen" component={Profile} />
+        <Stack.Screen name="Watchlist" component={Watchlist} />
       </Stack.Navigator>
     </NavigationContainer>
   );

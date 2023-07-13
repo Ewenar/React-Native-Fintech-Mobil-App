@@ -24,7 +24,7 @@ import SplashScreen from 'react-native-splash-screen'
 import Currencies from './src/components/StreamCurrency/Currencies';
 import store from './src/components/redux/store/Store';
 import { Provider } from 'react-redux';
-
+import Watchlist from './src/components/StreamCurrency/Watchlist';
 
 const App = () => {
 

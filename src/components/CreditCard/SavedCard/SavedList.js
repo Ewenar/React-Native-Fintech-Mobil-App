@@ -175,6 +175,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: '700',
         fontSize: 13,
+        marginRight: 5,
     },
 
     expContainer:{

@@ -62,7 +62,8 @@
     "Options": "Options",
     "LiveStreamButton": "Live Stream Currency",
     "ProfileButton": "Profile",
-    "LastTransaction": "Last Transaction"
+    "LastTransaction": "Last Transaction",
+    "WatchListButton": "Watchlist"
   },
   "currencyExchanger": {
     "SourceAmountTitle": "Source Amount",
@@ -76,5 +77,8 @@
   },
   "profileLanguage": {
     "Placeholder": "Choose a Language"
+  },
+  "Watchlist": {
+    "Title": "Watchlist"
   }
 }

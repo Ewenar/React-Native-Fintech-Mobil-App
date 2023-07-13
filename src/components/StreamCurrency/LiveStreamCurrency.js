@@ -3,9 +3,10 @@ import {SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, TouchableOpac
 import io from 'socket.io-client';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import useWebSocket from 'react-use-websocket';
-import Currencies from './Currencies'
+import Currencies from './Currencies';
 import {colors} from '../DarkMode/colors';
 import { ThemeContext } from '../contexts/ThemeContext';
+import Watchlist from './Watchlist';
 
 
 

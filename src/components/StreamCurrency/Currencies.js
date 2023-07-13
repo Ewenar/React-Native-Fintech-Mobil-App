@@ -6,9 +6,16 @@ import useWebSocket from 'react-use-websocket';
 import CurrencyText from './CurrencyText';
 import {colors} from '../DarkMode/colors';
 import { ThemeContext } from '../contexts/ThemeContext';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToWishlist } from '../redux/actions/Actions';
 
 
 const LiveStreamCurrency = () => {
+
+  const dispatch = useDispatch();
+
+  const items = useSelector(state => state);
+  //console.log(items[0]);
 
   const {theme} = useContext(ThemeContext);
 	let activeColors = colors[theme.mode];
@@ -103,18 +110,18 @@ const LiveStreamCurrency = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <CurrencyText title={'AUD'} rates={ups}/>
-        <CurrencyText title={'EUR'} rates={eur}/>
-        <CurrencyText title={'USD'} rates={usd}/>
-        <CurrencyText title={'CAD'} rates={cad}/>
-        <CurrencyText title={'GBP'} rates={gbp}/>
-        <CurrencyText title={'JPY'} rates={jpy}/>
-        <CurrencyText title={'NOK'} rates={nok}/>
-        <CurrencyText title={'TRY'} rates={tl}/>
-        <CurrencyText title={'SEK'} rates={sek}/>
-        <CurrencyText title={'CHF'} rates={chf}/>
-        <CurrencyText title={'SAR'} rates={sar}/>
-        <CurrencyText title={'DKK'} rates={dkk}/>
+        <CurrencyText title={'AUD'} rates={ups} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'EUR'} rates={eur} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'USD'} rates={usd} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'CAD'} rates={cad} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'GBP'} rates={gbp} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'JPY'} rates={jpy} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'NOK'} rates={nok} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'TRY'} rates={tl} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'SEK'} rates={sek} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'CHF'} rates={chf} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'SAR'} rates={sar} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
+        <CurrencyText title={'DKK'} rates={dkk} onAddToWatchlist={x => {dispatch(addToWishlist(x))}}/>
       </ScrollView>
     </SafeAreaView>
   );

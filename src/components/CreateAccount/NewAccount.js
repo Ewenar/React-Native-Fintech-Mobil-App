@@ -21,6 +21,7 @@ import {colors} from '../DarkMode/colors';
     const [pushAccountType, setPushAccountType] = useState('');
 	const [pushCurrencyType, setPushCurrencyType] = useState('');
 	const [pushBankAdress, setPushBankAdress] = useState('');
+	const [symbol, setSymbol] = useState('');
     const [isFocus, setIsFocus] = useState(false);
 	const [accountTypeData, setAccountData] = useState([]);
 	const [currencyTypeData, setCurrencyData] = useState([]);
@@ -65,6 +66,26 @@ import {colors} from '../DarkMode/colors';
 
 	},[]);
 
+	if (pushCurrencyType === 'USD'){
+		setSymbol('$');
+	}
+	else if (pushCurrencyType === 'JPY'){
+		setSymbol('¥');
+	}
+	else if (pushCurrencyType === 'TL'){
+		setSymbol('₺');
+	}
+	else if (pushCurrencyType === 'EUR'){
+		setSymbol('€');
+	}
+	else if (pushCurrencyType === 'GBP'){
+		setSymbol('£');
+	}
+	else if (pushCurrencyType === 'CHF'){
+		setSymbol('₣');
+	}
+
+
 	//Push Card Information to Firebase
 
 	const pushCardInfo = () => {
@@ -74,6 +95,7 @@ import {colors} from '../DarkMode/colors';
             currencyType: pushCurrencyType,
             bankAdress: pushBankAdress,
 			iban: number,
+			deposit: 2000,
         });
     };
 

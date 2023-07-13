@@ -62,7 +62,8 @@
     "Options": "Ayarlama",
     "LiveStreamButton": "Canlı Döviz Takibi",
     "ProfileButton": "Profil",
-    "LastTransaction": "Son İşlemler"
+    "LastTransaction": "Son İşlemler",
+    "WatchListButton": "Favoriler"
   },
   "currencyExchanger": {
     "SourceAmountTitle": "Satılan Miktar",
@@ -76,5 +77,8 @@
   },
   "profileLanguage": {
     "Placeholder": "Dil Seçiniz"
+  },
+  "Watchlist": {
+    "Title": "Favoriler"
   }
 }

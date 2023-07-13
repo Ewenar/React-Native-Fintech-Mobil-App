@@ -10,6 +10,7 @@ import {colors} from './DarkMode/colors';
 import '../../languages/i18n';
 import { useTranslation } from 'react-i18next';
 import LogoutPower from './Login/LogoutPower';
+import parseDeposit from './utils/parseDeposit';
 
 
 const windowHeight = Dimensions.get('window').height;
@@ -25,8 +26,9 @@ const Dashboard = ({navigation}) => {
     const {theme} = useContext(ThemeContext);
     let activeColors = colors[theme.mode];
 
-    // Use Cases
+    // Use State
 
+    const [amount, setAmount] = useState();
     const [deposit, setDeposit] = useState();
     const [historic, setHistoric] = useState();
 
@@ -55,6 +57,10 @@ const Dashboard = ({navigation}) => {
         navigation.navigate('Welcome');
     };
 
+    function goToWatchlist() {
+        navigation.navigate('Watchlist');
+    };
+
     //Firebase
 
     useEffect(() => {
@@ -73,6 +79,7 @@ const Dashboard = ({navigation}) => {
             setHistoric(parsedData);
 		});
     },[]);
+
 
     const setDB = () => {
         const reference = database().ref('deposit/');
@@ -159,6 +166,14 @@ const Dashboard = ({navigation}) => {
                         <View style={styles.accountList_item_image_text}>
                             <View>
                                 <Text style={[styles.account_word, {color: activeColors.tint}]}>{t('dashboard.ProfileButton')}</Text>
+                            </View>
+                        </View>
+                        <AntDesign name="arrowright" size={20} color='#153ee7'/>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={[styles.accountList_item, {backgroundColor: activeColors.secondary}]} onPress={goToWatchlist}>
+                        <View style={styles.accountList_item_image_text}>
+                            <View>
+                                <Text style={[styles.account_word, {color: activeColors.tint}]}>{t('dashboard.WatchListButton')}</Text>
                             </View>
                         </View>
                         <AntDesign name="arrowright" size={20} color='#153ee7'/>

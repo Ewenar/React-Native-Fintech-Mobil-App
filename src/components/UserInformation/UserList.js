@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
     },
 
     informationText: {
-        fontSize: 16,
+        fontSize: 14,
     },
 });
